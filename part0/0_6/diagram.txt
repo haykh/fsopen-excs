@@ -1,0 +1,16 @@
+note over browser:
+appends new note to browser-side `notes` array
+end note
+
+note over browser:
+calls `redrawNotes()` that recreates the DOM
+end note
+
+browser->server: HTTP POST exampleapp/new_note_spa | json: '{content: "...", date: "..."}'
+note over server:
+receives json message from the browser
+adds to the server-side database
+end note
+
+server-->browser: json: '{message: "note created"}'
+
