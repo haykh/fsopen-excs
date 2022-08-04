@@ -1,24 +1,64 @@
 {
-  "persons":[
-    { 
-      "name": "Arto Hellas", 
+  "persons": [
+    {
+      "name": "Arto Hellas",
       "number": "040-123456",
       "id": 1
     },
-    { 
-      "name": "Ada Lovelace", 
+    {
+      "name": "Ada Lovelace",
       "number": "39-44-5323523",
       "id": 2
     },
-    { 
-      "name": "Dan Abramov", 
+    {
+      "name": "Dan Abramov",
       "number": "12-43-234345",
       "id": 3
     },
-    { 
-      "name": "Mary Poppendieck", 
-      "number": "39-23-6423122",
+    {
+      "name": "Mary Poppendieck",
+      "number": "211",
       "id": 4
+    },
+    {
+      "name": "Isaac Newton",
+      "number": "12-34-5678902",
+      "id": 6
+    },
+    {
+      "name": "Niels Bohr",
+      "number": "12-34-5678904",
+      "id": 8
+    },
+    {
+      "name": "Lise Meitner",
+      "number": "12-34-5678905",
+      "id": 9
+    },
+    {
+      "name": "Enrico Fermi",
+      "number": "3-14-15-92-65-35",
+      "id": 10
+    },
+    {
+      "name": "Albert Hofmann",
+      "number": "12-34-5678907",
+      "id": 11
+    },
+    {
+      "name": "Erwin Schrödinger",
+      "number": "12-34-5678908",
+      "id": 12
+    },
+    {
+      "name": "Stephen Hawking",
+      "number": "12-34-5678911",
+      "id": 15
+    },
+    {
+      "name": "Ernest Rutherford",
+      "number": "343032-234322095",
+      "id": 17
     }
   ]
 }
