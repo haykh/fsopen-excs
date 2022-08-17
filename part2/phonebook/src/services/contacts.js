@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'http://localhost:3001/persons'
+const baseUrl = '/api/persons'
 
 const getContacts = () => axios.get(baseUrl).then(response => response.data)
 const createContact = newContact => axios.post(baseUrl, newContact).then(response => response.data)
