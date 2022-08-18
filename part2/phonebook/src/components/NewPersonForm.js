@@ -27,9 +27,9 @@ const NewPersonForm = ({ persons, setPersons, setAlertNote }) => {
               setAlertNote({ message: '', type: '' })
             }, 5000)
           })
-          .catch(() => {
+          .catch(err => {
             setAlertNote({
-              message: `${newPerson.name} does not exist`,
+              message: err.response.data.error,
               type: 'error'
             })
             setTimeout(() => {
@@ -53,6 +53,15 @@ const NewPersonForm = ({ persons, setPersons, setAlertNote }) => {
           setAlertNote({ message: '', type: '' })
         }, 5000)
         setNewPerson(dummy);
+      })
+      .catch(err => {
+        setAlertNote({
+          message: err.response.data.error,
+          type: 'error'
+        })
+        setTimeout(() => {
+          setAlertNote({ message: '', type: '' })
+        }, 5000)
       })
   }
   return (
